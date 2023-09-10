@@ -4,6 +4,7 @@ import ShowPerformance from "./components/ShowPerformance";
 import MeasurePerformance from "./components/MeasurePerformance";
 import { PerformanceProvider } from "./context/PerformanceContext";
 import AllPerformance from "./components/AllPerformance";
+import NotFound from "./components/NotFound";
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
             <Route path="/" element={<MeasurePerformance />}/>
             <Route path="/show-performance" element={<ShowPerformance />} />
             <Route path="/all-performance" element={<AllPerformance />} />
-            <Route path="*" element={<NotFound />}></Route>
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </PerformanceProvider>
       </Router>
