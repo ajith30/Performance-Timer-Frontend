@@ -58,7 +58,7 @@ export const PerformanceProvider = ({ children }) => {
   }
 
   // Delete all performance records of each events
-  const deleteFeedback = async (id) => {
+  const deleteFeedback = async () => {
     if (window.confirm("Are you sure you want to delete all records?")) {
       await fetch(`${BACKEND_API}/delete-all`, { method: "DELETE" });
       // Fetching latest records once all records deleted
