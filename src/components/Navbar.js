@@ -33,7 +33,7 @@ const Navbar = () => {
             </Box>
 
           
-            <Button sx={{color: "white", display: {xs:"none", sm:"block"}}} onClick={() => { navigate("/measure-performance")}} >Measure Performance</Button>
+            <Button sx={{color: "white", display: {xs:"none", sm:"block"}}} onClick={() => { navigate("/")}} >Measure Performance</Button>
             <Button sx={{color: "white", display: {xs:"none", sm:"block"}}} onClick={() => { navigate("/show-performance")}}>Show Performance</Button>
           </Box>
         </Toolbar>
