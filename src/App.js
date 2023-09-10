@@ -14,9 +14,9 @@ function App() {
         <PerformanceProvider>
           <Routes>
             <Route path="/" element={<MeasurePerformance />}/>
-            <Route path="/measure-performance" element={<MeasurePerformance />} />
             <Route path="/show-performance" element={<ShowPerformance />} />
             <Route path="/all-performance" element={<AllPerformance />} />
+            <Route path="*" element={<NotFound />}></Route>
           </Routes>
         </PerformanceProvider>
       </Router>
